@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ParamForSetUser {
+import java.io.Serializable;
+
+public class ParamForSetUser implements Serializable {
     private int userId;
     private String firstName;
     private String lastName;

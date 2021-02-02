@@ -1,8 +1,9 @@
 package sungro.api;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class User {
+public class User implements Serializable {
     private int userId;
     private String firstName;
     private String lastName;
@@ -28,7 +29,7 @@ public class User {
         status = "";
         createdByUserId = 0;
         createdByUserName = "";
-        createdOn = LocalDateTime.of(0, 0, 0, 0, 0, 0);
+        createdOn = LocalDateTime.of(1970, 1, 1, 0, 0, 0);
     }
 
     public int getUserId() {

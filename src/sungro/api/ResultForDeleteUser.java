@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ResultForDeleteUser {
+import java.io.Serializable;
+
+public class ResultForDeleteUser implements Serializable {
     private Status status;
 
     public ResultForDeleteUser() {

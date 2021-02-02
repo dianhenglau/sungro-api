@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ParamForGetManyUsers {
+import java.io.Serializable;
+
+public class ParamForGetManyUsers implements Serializable {
     private String name;
     private String idNumber;
     private String role;

@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ResultForSetUser {
+import java.io.Serializable;
+
+public class ResultForSetUser implements Serializable {
     private Status status;
 
     public ResultForSetUser() {

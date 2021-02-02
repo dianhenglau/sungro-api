@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ParamForGetOneUser {
+import java.io.Serializable;
+
+public class ParamForGetOneUser implements Serializable {
     private int userId;
 
     public ParamForGetOneUser() {

@@ -1,8 +1,9 @@
 package sungro.api;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ResultForGetManyUsers {
+public class ResultForGetManyUsers implements Serializable {
     private Status status;
     private ArrayList<User> users;
     private int currentPage;

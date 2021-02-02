@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ResultForAddUser {
+import java.io.Serializable;
+
+public class ResultForAddUser implements Serializable {
     private Status status;
     private int newUserId;
 

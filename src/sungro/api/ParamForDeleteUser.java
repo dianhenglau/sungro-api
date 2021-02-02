@@ -1,6 +1,8 @@
 package sungro.api;
 
-public class ParamForDeleteUser {
+import java.io.Serializable;
+
+public class ParamForDeleteUser implements Serializable {
     private int userId;
 
     public ParamForDeleteUser() {
