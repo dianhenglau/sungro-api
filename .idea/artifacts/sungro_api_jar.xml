@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sungro-api:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sungro_api_jar</output-path>
+    <root id="archive" name="sungro-api.jar">
+      <element id="module-output" name="sungro-api" />
+    </root>
+  </artifact>
+</component>
