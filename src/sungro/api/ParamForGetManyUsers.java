@@ -3,6 +3,7 @@ package sungro.api;
 import java.io.Serializable;
 
 public class ParamForGetManyUsers implements Serializable {
+    private String sessionId;
     private String name;
     private String email;
     private String idNumber;
@@ -10,11 +11,20 @@ public class ParamForGetManyUsers implements Serializable {
     private int page;
 
     public ParamForGetManyUsers() {
+        sessionId = "";
         name = "";
         email = "";
         idNumber = "";
         role = "";
         page = 1;
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 
     public String getName() {

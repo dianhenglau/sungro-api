@@ -3,6 +3,7 @@ package sungro.api;
 import java.io.Serializable;
 
 public class ParamForSetUser implements Serializable {
+    private String sessionId;
     private int userId;
     private String firstName;
     private String lastName;
@@ -15,6 +16,7 @@ public class ParamForSetUser implements Serializable {
     private String status;
 
     public ParamForSetUser() {
+        sessionId = "";
         userId = 0;
         firstName = "";
         lastName = "";
@@ -25,6 +27,14 @@ public class ParamForSetUser implements Serializable {
         password = "";
         profilePic = new byte[0];
         status = "";
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 
     public int getUserId() {

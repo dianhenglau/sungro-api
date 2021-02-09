@@ -17,5 +17,5 @@ public class ResultForDeleteUser implements Serializable {
         this.status = status;
     }
 
-    public enum Status {SUCCESS, NOT_FOUND, DEPENDED, SERVER_ERROR}
+    public enum Status {SUCCESS, INVALID_SESSION_ID, NOT_FOUND, DEPENDED, SERVER_ERROR}
 }
