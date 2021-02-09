@@ -4,12 +4,14 @@ import java.io.Serializable;
 
 public class ParamForGetManyUsers implements Serializable {
     private String name;
+    private String email;
     private String idNumber;
     private String role;
     private int page;
 
     public ParamForGetManyUsers() {
         name = "";
+        email = "";
         idNumber = "";
         role = "";
         page = 1;
@@ -21,6 +23,14 @@ public class ParamForGetManyUsers implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getIdNumber() {
