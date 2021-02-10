@@ -3,6 +3,9 @@ package sungro.api;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/**
+ * `onDate` need to fill in year, month, day. `onMonth` need to fill in year, month, ignore the day.
+ */
 public class ParamForGetManySales implements Serializable {
     private String sessionId;
     private int productId;
