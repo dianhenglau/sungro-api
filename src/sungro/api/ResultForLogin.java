@@ -37,5 +37,5 @@ public class ResultForLogin implements Serializable {
         this.sessionId = sessionId;
     }
 
-    public enum Status {SUCCESS, INVALID_CREDENTIAL, SERVER_ERROR}
+    public enum Status {SUCCESS, MISSING_EMAIL, MISSING_PASSWORD, INVALID_CREDENTIAL, SERVER_ERROR}
 }
