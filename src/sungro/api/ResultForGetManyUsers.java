@@ -48,5 +48,5 @@ public class ResultForGetManyUsers implements Serializable {
         this.maxPage = maxPage;
     }
 
-    public enum Status {SUCCESS, INVALID_SESSION_ID, SERVER_ERROR}
+    public enum Status {SUCCESS, INVALID_SESSION_ID, PERMISSION_DENIED, SERVER_ERROR}
 }
