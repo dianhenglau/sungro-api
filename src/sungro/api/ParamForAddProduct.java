@@ -2,7 +2,6 @@ package sungro.api;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.MathContext;
 
 public class ParamForAddProduct implements Serializable {
     private String sessionId;
@@ -16,7 +15,7 @@ public class ParamForAddProduct implements Serializable {
         sessionId = "";
         name = "";
         category = "";
-        productPrice = new BigDecimal(0, new MathContext(2));
+        productPrice = BigDecimal.valueOf(0, 2);
         productPic = new byte[0];
         status = "";
     }

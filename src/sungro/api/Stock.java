@@ -2,7 +2,6 @@ package sungro.api;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -24,7 +23,7 @@ public class Stock implements Serializable {
         productId = 0;
         productName = "";
         productCategory = "";
-        productPrice = new BigDecimal(0, new MathContext(2));
+        productPrice = BigDecimal.valueOf(0, 2);
         productPic = new byte[0];
         quantity = 0;
         expiryDate = LocalDate.of(1970, 1, 1);

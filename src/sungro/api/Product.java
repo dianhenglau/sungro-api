@@ -2,7 +2,6 @@ package sungro.api;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.time.LocalDateTime;
 
 public class Product implements Serializable {
@@ -20,7 +19,7 @@ public class Product implements Serializable {
         productId = 0;
         name = "";
         category = "";
-        productPrice = new BigDecimal(0, new MathContext(2));
+        productPrice = BigDecimal.valueOf(0, 2);
         productPic = new byte[0];
         status = "";
         createdByUserId = 0;

@@ -2,7 +2,6 @@ package sungro.api;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.time.LocalDateTime;
 
 public class Sale implements Serializable {
@@ -23,7 +22,7 @@ public class Sale implements Serializable {
         productId = 0;
         productName = "";
         productCategory = "";
-        unitPrice = new BigDecimal(0, new MathContext(2));
+        unitPrice = BigDecimal.valueOf(0, 2);
         soldQuantity = 0;
         soldByUserId = 0;
         soldByUserName = "";
