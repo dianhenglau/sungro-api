@@ -8,7 +8,8 @@ public class ParamForGetManyStock implements Serializable {
     private String sku;
     private String name;
     private String category;
-    private LocalDate expiryDate;
+    private LocalDate expiryDateFrom;
+    private LocalDate expiryDateTo;
     private int page;
 
     public ParamForGetManyStock() {
@@ -16,7 +17,8 @@ public class ParamForGetManyStock implements Serializable {
         sku = "";
         name = "";
         category = "";
-        expiryDate = LocalDate.of(1970, 1, 1);
+        expiryDateFrom = LocalDate.of(1970, 1, 1);
+        expiryDateTo = LocalDate.of(1970, 1, 1);
         page = 1;
     }
 
@@ -52,12 +54,20 @@ public class ParamForGetManyStock implements Serializable {
         this.category = category;
     }
 
-    public LocalDate getExpiryDate() {
-        return expiryDate;
+    public LocalDate getExpiryDateFrom() {
+        return expiryDateFrom;
     }
 
-    public void setExpiryDate(LocalDate expiryDate) {
-        this.expiryDate = expiryDate;
+    public void setExpiryDateFrom(LocalDate expiryDate) {
+        this.expiryDateFrom = expiryDate;
+    }
+
+    public LocalDate getExpiryDateTo() {
+        return expiryDateTo;
+    }
+
+    public void setExpiryDateTo(LocalDate expiryDateTo) {
+        this.expiryDateTo = expiryDateTo;
     }
 
     public int getPage() {
