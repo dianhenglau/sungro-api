@@ -8,12 +8,14 @@ public class ParamForAddStock implements Serializable {
     private int productId;
     private int quantity;
     private LocalDate expiryDate;
+    private String remark;
 
     public ParamForAddStock() {
         sessionId = "";
         productId = 0;
         quantity = 0;
         expiryDate = LocalDate.of(1970, 1, 1);
+        remark = "";
     }
 
     public String getSessionId() {
@@ -46,5 +48,13 @@ public class ParamForAddStock implements Serializable {
 
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 }

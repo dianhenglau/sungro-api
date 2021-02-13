@@ -18,6 +18,6 @@ public class ResultForSetStock implements Serializable {
     }
 
     public enum Status {
-        SUCCESS, INVALID_SESSION_ID, NOT_FOUND, MISSING_REMARK, SERVER_ERROR
+        SUCCESS, INVALID_SESSION_ID, NOT_FOUND, INVALID_QUANTITY_VARIED, MISSING_REMARK, SERVER_ERROR
     }
 }
