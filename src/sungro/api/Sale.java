@@ -12,6 +12,7 @@ public class Sale implements Serializable {
     private String productCategory;
     private BigDecimal unitPrice;
     private int soldQuantity;
+    private BigDecimal subTotalPrice;
     private int soldByUserId;
     private String soldByUserName;
     private LocalDateTime soldOn;
@@ -83,6 +84,14 @@ public class Sale implements Serializable {
 
     public void setSoldQuantity(int soldQuantity) {
         this.soldQuantity = soldQuantity;
+    }
+
+    public BigDecimal getSubTotalPrice() {
+        return subTotalPrice;
+    }
+
+    public void setSubTotalPrice(BigDecimal subTotalPrice) {
+        this.subTotalPrice = subTotalPrice;
     }
 
     public int getSoldByUserId() {
