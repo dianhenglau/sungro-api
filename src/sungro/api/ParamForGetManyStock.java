@@ -6,6 +6,7 @@ import java.time.LocalDate;
 public class ParamForGetManyStock implements Serializable {
     private String sessionId;
     private String sku;
+    private int productId;
     private String name;
     private String category;
     private LocalDate expiryDateFrom;
@@ -15,6 +16,7 @@ public class ParamForGetManyStock implements Serializable {
     public ParamForGetManyStock() {
         sessionId = "";
         sku = "";
+        productId = 0;
         name = "";
         category = "";
         expiryDateFrom = LocalDate.of(1970, 1, 1);
@@ -36,6 +38,14 @@ public class ParamForGetManyStock implements Serializable {
 
     public void setSku(String sku) {
         this.sku = sku;
+    }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getName() {
